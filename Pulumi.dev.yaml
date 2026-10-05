@@ -1,0 +1,12 @@
+config:
+  azure-native:location: WestUS2
+  defenstack-start:adminUsername: azureadmin
+  defenstack-start:vmName: dfsk-dev-vm01
+  defenstack-start:vmSize: Standard_B2s_v2
+  defenstack-start:osImage: Canonical:ubuntu-24_04-lts:server:latest
+  defenstack-start:servicePort: "8080"
+  defenstack-start:allowedSourcePrefixes:
+    - 203.0.113.0/24
+  defenstack-start:enablePublicIp: "true"
+environment:
+  - boe-project/dev
